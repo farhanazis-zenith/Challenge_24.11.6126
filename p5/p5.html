@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge_24.11.6126</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Header Image */
+        .header-banner img {
+            width: 100%;
+            display: block;
+        }
+
+        /* Hint a: Navigation menggunakan Flexbox */
+        nav {
+            background-color: #999;
+            display: flex;
+            justify-content: flex-end; /* Memindahkan menu ke kanan */
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Hint b: Layout dua kolom menggunakan Flexbox */
+        .container {
+            display: flex;
+            min-height: 400px;
+        }
+
+        /* Kolom Biodata (Kiri) */
+        .biodata {
+            background-color: #a2d2d2; /* Warna teal/hijau kebiruan */
+            flex: 1; /* Ukuran lebih kecil */
+            padding: 20px;
+        }
+
+        .biodata img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid white;
+            margin-bottom: 15px;
+        }
+
+        /* Kolom Pengalaman Kerja (Kanan) */
+        .pengalaman {
+            background-color: white;
+            flex: 2; /* Ukuran lebih lebar */
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        th {
+            background-color: #a2d2d2;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #999;
+            color: #333;
+            text-align: center;
+            padding: 15px;
+            font-size: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Challenge_24.11.6126</h1>
+    <h1>Challenge_Farhan Azis</h1>
+    <div class="header-banner">
+        <img src="D:\24.11.6126\banner.jpg" alt="Web Development Banner">
+    </div>
+
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">PRODUCTS</a>
+        <a href="#">CONTACT</a>
+    </nav>
+
+    <div class="container">
+        <section class="biodata">
+            <h3>Biodata</h3>
+            <img src="D:\24.11.6126\skye.jpg" alt="skye">
+            <p style="font-size: 12px; line-height: 1.5;">
+                Hello, My name is Skye.<br>
+                Skye adalah agen ke-14 dalam protokol VALORANT yang berasal dari Australia. Ia dikenal sebagai seorang aktivis lingkungan (eco-warrior) yang memiliki kemampuan Radiant untuk menghidupkan kembali alam dan memanggil hewan-hewan tangguh untuk membantunya di medan perang.
+            </p>
+        </section>
+
+        <section class="pengalaman">
+            <h3>Pengalaman Kerja</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Pekerjaan</th>
+                        <th>Posisi/Jabatan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2014</td>
+                        <td>Aktivis Lingkungan (Eco-warrior)</td>
+                        <td>Initiator</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>Pematung Kayu</td>
+                        <td>Instruktur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        Copyright Challenge Pemrograman Web
+    </footer>
+
+</body>
+</html>
